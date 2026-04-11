@@ -41,17 +41,81 @@
     {
       "@context": "https://schema.org",
       "@type": "AccountingService",
-      "name": "Soluciones Contables",
-      "description": "Consultores y Contadores de Empresas con 35 años de trayectoria.",
+      "name": "Soluciones Contables C&D",
+      "image": "https://solucionescontables-cd.com.py/assets/Image_wpagzswpagzswpag_2.jpg",
+      "@id": "https://solucionescontables-cd.com.py/#organization",
+      "url": "https://solucionescontables-cd.com.py",
+      "telephone": "+595983669036",
+      "priceRange": "$$",
+      "currency": "PYG",
+      "founder": {
+        "@type": "Person",
+        "name": "Carmen Cantero",
+        "jobTitle": "Senior Tax Consultant & Accountant",
+        "description": "Especialista en normativas tributarias de la SET con 35 años de experiencia en el marco legal paraguayo.",
+        "knowsAbout": [
+          "Sistema Tributario Paraguayo",
+          "Impuesto a la Renta Personal (IRP)",
+          "Impuesto a la Renta Empresarial (IRE)",
+          "Auditoría Contable"
+        ],
+        "affiliation": {
+          "@type": "Organization",
+          "name": "Soluciones Contables C&D"
+        },
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "Universidad Nacional del Este"
+        },
+        "sameAs": ["https://linkedin.com/in/carmencantero"]
+      },
       "address": {
         "@type": "PostalAddress",
+        "streetAddress": "Calle Lima",
         "addressLocality": "Ciudad del Este",
         "addressRegion": "Alto Paraná",
+        "postalCode": "7000",
         "addressCountry": "PY"
       },
-      "telephone": "+595983669036",
-      "email": "solucionescontablescanteroasoc@gmail.com",
-      "priceRange": "$$"
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -25.5097,
+        "longitude": -54.6111
+      },
+      "areaServed": ["Ciudad del Este", "Hernandarias", "Presidente Franco", "Paraguay"],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Servicios Contables",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Gestión de IRP (Impuesto a la Renta Personal)"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Asesoría IVA e IRE"
+            }
+          }
+        ]
+      },
+      "mainEntityOfPage": {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Donde queda Soluciones Contables C&D?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Soluciones Contables C&D está localizada no Km 7, Calle Lima, em Ciudad del Este, Paraguai."
+            }
+          }
+        ]
+      }
     }
     </script>
 </head>
@@ -165,21 +229,22 @@
           <p class="text-blue-100 mb-8 italic">"Si tus hábitos financieros están incorrectos, tu forma de vida seguirá
             siendo endeudarte cada día más."</p>
           <div class="space-y-4">
-            <details class="group bg-white/10 rounded-lg p-4 cursor-pointer">
-              <summary class="font-bold">1. Gastar más de lo que ganas</summary>
-              <p class="pt-3 text-sm text-blue-200">Aprender a manejar bien tus gastos es el principio de unas finanzas
+            <div class="group bg-white/10 rounded-lg p-4 cursor-pointer">
+              <h3 class="font-bold">1. Gastar más de lo que ganas</h3>
+              <p class="pt-3 text-sm text-blue-200">Aprender a manejar bien tus gastos es el principio de unas
+                finanzas
                 saludables para evitar la crisis.</p>
-            </details>
-            <details class="group bg-white/10 rounded-lg p-4 cursor-pointer">
-              <summary class="font-bold">2. No llevar registro de gastos</summary>
+            </div>
+            <div class="group bg-white/10 rounded-lg p-4 cursor-pointer">
+              <h3 class="font-bold">2. No llevar registro de gastos</h3>
               <p class="pt-3 text-sm text-blue-200">Encuentra las "fugas" de dinero en tu bolsillo llevando un control
                 estricto.</p>
-            </details>
-            <details class="group bg-white/10 rounded-lg p-4 cursor-pointer">
-              <summary class="font-bold">3. Área de comodidad</summary>
+            </div>
+            <div class="group bg-white/10 rounded-lg p-4 cursor-pointer">
+              <h3 class="font-bold">3. Área de comodidad</h3>
               <p class="pt-3 text-sm text-blue-200">Si tu negocio va hacia la quiebra, ¡haz un cambio rápido! No te
                 quedes esperando.</p>
-            </details>
+            </div>
           </div>
         </div>
         <div class="bg-white text-gray-800 p-8 rounded-2xl shadow-xl">
@@ -207,6 +272,25 @@
     </div>
   </section>
 
+  <section class="bg-white p-8 rounded-2xl border-l-4 border-sky-900 shadow-md my-10">
+    <div class="flex flex-col md:flex-row items-center gap-6">
+      <img src="assets/carmen_cantero.jpg" alt="Lic. Carmen Cantero, Especialista Contable"
+        class="w-32 h-32 rounded-full object-cover shadow-lg">
+      <div>
+        <h2 class="text-2xl font-bold text-sky-900">Liderado por la Lic. Carmen Cantero</h2>
+        <p class="text-blue-600 font-semibold mb-2">Contadora Pública Colegiada | Registro Profesional N° XXXX</p>
+        <p class="text-gray-600 text-sm leading-relaxed">
+          Con más de 35 años de trayectoria en el mercado paraguayo, la Lic. Cantero es especialista en
+          <strong>Contabilidad & Tributación</strong>. Ha asesorado a más de 500 empresas en la transición
+          hacia el nuevo sistema tributario de la SET (IRE/IRP).
+        </p>
+        <div class="mt-4 flex gap-4 text-xs font-bold uppercase tracking-widest text-gray-400">
+          <span>✓ Miembro del Colegio de Contadores</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <footer id="contacto" class="py-20 bg-gray-50">
     <div class="max-w-4xl mx-auto px-4 text-center">
       <h2 class="text-3xl font-bold mb-4">¿Listo para poner tus cuentas en orden?</h2>
@@ -215,8 +299,8 @@
       <p class="text-gray-600 mb-10">Agenda una consulta profesional hoy mismo. 35 años de experiencia nos avalan.</p>
       <div class="mb-12 rounded-xl overflow-hidden shadow-lg mx-auto w-full max-w-3xl border border-gray-200">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1800.7053550505605!2d-54.66050313971524!3d-25.49134562900666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2spy!4v1775752651753!5m2!1sen!2spy"
-          width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d636.6449785812075!2d-54.66037482323643!3d-25.491440979467114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f685edbb0c0331%3A0x902764edec113590!2sHostal%20Mburukuya.!5e0!3m2!1spt-BR!2spy!4v1775869785406!5m2!1spt-BR!2spy"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
       <a href="https://wa.me/595983669036?text=Vengo%20desde%20el%20sitio%20web%20y%20estoy%20interesado%20en%20sus%20servicios"
