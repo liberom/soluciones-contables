@@ -12,9 +12,11 @@
   <meta property="og:title" content="Soluciones Contables - Cantero & Asoc.">
   <meta property="og:description" content="Expertos en contabilidad general, IRP, IRE y asesoría laboral en Paraguay.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/Image_wpagzswpagzswpag_2.jpg">
+  <meta property="og:image"
+    content="https://liberom.github.io/soluciones-contables/assets/Image_wpagzswpagzswpag_2.jpg">
 
-  <link rel="icon" type="image/jpeg" href="assets/Image_wpagzswpagzswpag_2.jpg">
+  <link rel="icon" type="image/jpeg"
+    href="https://liberom.github.io/soluciones-contables/assets/Image_wpagzswpagzswpag_2.jpg">
 
   <script src="https://cdn.tailwindcss.com"></script>
 
@@ -38,13 +40,15 @@
   </style>
 
   <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "AccountingService",
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "AccountingService",
       "name": "Soluciones Contables C&D",
-      "image": "https://solucionescontables-cd.com.py/assets/Image_wpagzswpagzswpag_2.jpg",
-      "@id": "https://solucionescontables-cd.com.py/#organization",
-      "url": "https://solucionescontables-cd.com.py",
+      "image": "https://liberom.github.io/soluciones-contables/assets/Image_wpagzswpagzswpag_2.jpg",
+      "@id": "https://liberom.github.io/soluciones-contables/#organization",
+      "url": "https://liberom.github.io/soluciones-contables/",
+      "openingHours": "Lun-Vie 08:00-18:00",
       "telephone": "+595983669036",
       "priceRange": "$$",
       "currency": "PYG",
@@ -67,6 +71,10 @@
           "@type": "CollegeOrUniversity",
           "name": "Universidad Nacional del Este"
         },
+        "memberOf": {
+          "@type": "Organization",
+          "name": "Colegio de Contadores del Paraguay"
+        },
         "sameAs": ["https://linkedin.com/in/carmencantero"]
       },
       "address": {
@@ -82,65 +90,271 @@
         "latitude": -25.5097,
         "longitude": -54.6111
       },
-      "areaServed": ["Ciudad del Este", "Hernandarias", "Presidente Franco", "Paraguay"],
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Ciudad del Este",
+          "containedInPlace": {
+            "@type": "State",
+            "name": "Alto Paraná"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Hernandarias",
+          "containedInPlace": {
+            "@type": "State",
+            "name": "Alto Paraná"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Presidente Franco",
+          "containedInPlace": {
+            "@type": "State",
+            "name": "Alto Paraná"
+          }
+        },
+        {
+          "@type": "State",
+          "name": "Alto Paraná",
+          "containedInPlace": {
+            "@type": "Country",
+            "name": "Paraguay"
+          }
+        },
+        {
+          "@type": "Country",
+          "name": "Paraguay"
+        }
+      ],
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
-        "name": "Servicios Contables",
+        "name": "Servicios Profesionales",
         "itemListElement": [
           {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Gestión de IRP (Impuesto a la Renta Personal)"
-            }
+            "@type": "OfferCatalog",
+            "name": "Contabilidad & Tributación",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": { "@type": "Service", "name": "Apertura de RUC" }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": { "@type": "Service", "name": "Contabilidad en General" }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": { "@type": "Service", "name": "Asesoría Contable y Tributaria" }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": { "@type": "Service", "name": "Declaración de Impuestos" }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": { "@type": "Service", "name": "IRP RSP - IRP RGC" }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": { "@type": "Service", "name": "IRE Simple y General" }
+              }
+            ]
           },
           {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Asesoría IVA e IRE"
-            }
+            "@type": "OfferCatalog",
+            "name": "Laboral & Legal",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": { "@type": "Service", "name": "Asesoramiento Laboral" }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": { "@type": "Service", "name": "Gestión ante IPS" }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": { "@type": "Service", "name": "Trámites en Ministerio de Justicia y Trabajo" }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": { "@type": "Service", "name": "Gestión de Patente Municipal" }
+              }
+            ]
           }
         ]
       },
       "mainEntityOfPage": {
         "@type": "FAQPage",
+        "name": "Preguntas Frecuentes",
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "Donde queda Soluciones Contables C&D?",
+            "name": "¿Cuáles son las nuevas reglamentaciones sobre facturación electrónica (SIFEN)?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Soluciones Contables C&D está localizada no Km 7, Calle Lima, em Ciudad del Este, Paraguai."
+              "text": "Para 2026, los grupos del 15 al 18 deben transitar obligatoriamente a SIFEN. Adicionalmente, el registro de comprobantes (RG 90) se mantiene obligatorio mensualmente en el portal Marangatu y rige la Declaración Aduanera Digital."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué gastos son deducibles en el IRP-RSP y cómo es su declaración?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Para servicios personales (IRP-RSP) se pueden deducir gastos locales en salud, educación, alimentación y vivienda, entre otros, exigiendo comprobantes legales. La declaración de 2026 está automatizada y consolidada por el comprobante RG 90 en el formulario anual."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuándo se genera la obligación de pago del IDU en Paraguay?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "El Impuesto a los Dividendos y Utilidades (8% o 15%) se debe enterar vía retención en la fuente cuando las utilidades están 'a disposición' por aprobación de asamblea, con límite de hasta 12 meses. Su única exención radica en efectuar una Capitalización formal de utilidades."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué pasa si no realizo la actualización biométrica de mi RUC?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "El contribuyente perderá la habilitación para emitir y utilizar facturas (pérdida de timbrado). La DNIT exige identidad digital por Paraguay Py o actualización en dependencias para reanudar cualquier actividad que detone el Marangatu."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Debo pagar impuestos por la venta de las Criptomonedas según la RG 47/2026?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. Aunque el holding o tenencia esté exento de impuestos transitoriamente, vender o convertir criptoactivos impone una carga impositiva mediante el IRP-Rentas de Capital (8%) sobre la utilidad neta de la operación informada."
             }
           }
         ]
       }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "name": "Breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://liberom.github.io/soluciones-contables/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Servicios",
+          "item": "https://liberom.github.io/soluciones-contables/#servicios"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Consejos",
+          "item": "https://liberom.github.io/soluciones-contables/#educacion"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Nosotros",
+          "item": "https://liberom.github.io/soluciones-contables/#sobre-nosotros"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "Contacto",
+          "item": "https://liberom.github.io/soluciones-contables/#contacto"
+        }
+      ]
     }
+    ]
     </script>
 </head>
 
 <body class="bg-gray-50 text-gray-800 antialiased">
 
+  <!-- ================================================== -->
+  <!-- BREADCRUMB (HIDDEN FOR SEO) -->
+  <!-- ================================================== -->
+  <nav aria-label="Breadcrumb" class="sr-only">
+    <ol>
+      <li><a href="/">Inicio</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#educacion">Consejos</a></li>
+      <li><a href="#sobre-nosotros">Nosotros</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+      <li><a href="#faq">Perguntas Frequentes</a></li>
+    </ol>
+  </nav>
+
+  <!-- ================================================== -->
+  <!-- NAVBAR -->
+  <!-- ================================================== -->
   <nav class="sticky top-0 z-50 bg-white shadow-sm">
     <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
       <div class="flex items-center space-x-3">
-        <img src="assets/Image_wpagzswpagzswpag_2.jpg" alt="Logo Soluciones Contables"
-          class="h-12 w-auto rounded-md object-contain">
-        <div class="font-bold text-xl text-sky-900 uppercase tracking-tighter hidden sm:block">
-          Soluciones <span class="text-blue-600">Contables</span> C&D
+        <img src="https://liberom.github.io/soluciones-contables/assets/Image_wpagzswpagzswpag_2.jpg"
+          alt="Logo Soluciones Contables" class="h-10 md:h-12 w-auto rounded-md object-contain">
+        <div class="font-bold text-base md:text-xl text-sky-900 uppercase tracking-tighter block">
+          Soluciones <span class="text-blue-600">Contables</span><span class="hidden sm:inline"> C&D</span>
         </div>
       </div>
       <div class="hidden md:flex space-x-8 font-medium text-sm uppercase">
         <a href="#servicios" class="hover:text-blue-600 transition">Servicios</a>
         <a href="#educacion" class="hover:text-blue-600 transition">Consejos</a>
+        <a href="#sobre-nosotros" class="hover:text-blue-600 transition">Nosotros</a>
         <a href="#contacto" class="hover:text-blue-600 transition">Contacto</a>
       </div>
-      <a href="https://wa.me/595983669036?text=Vengo%20desde%20el%20sitio%20web%20y%20estoy%20interesado%20en%20sus%20servicios"
-        class="hidden sm:inline-flex bg-green-600 text-white px-5 py-2 rounded-full text-sm font-bold hover:bg-green-700 transition">WhatsApp</a>
+      <div class="flex items-center gap-4">
+        <a href="https://wa.me/595983669036?text=Vengo%20desde%20el%20sitio%20web%20y%20estoy%20interesado%20en%20sus%20servicios"
+          class="hidden sm:inline-flex bg-green-600 text-white px-5 py-2 rounded-full text-sm font-bold hover:bg-green-700 transition">WhatsApp</a>
+        <button id="mobile-menu-btn"
+          class="md:hidden text-sky-900 p-2 focus:outline-none focus:ring-2 focus:ring-sky-200 rounded">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu"
+      class="hidden md:hidden bg-gray-50 border-t border-gray-100 flex-col px-4 py-4 space-y-4 font-medium text-sm uppercase shadow-inner">
+      <a href="#servicios" class="block text-gray-800 hover:text-blue-600 transition">Servicios</a>
+      <a href="#educacion" class="block text-gray-800 hover:text-blue-600 transition">Consejos</a>
+      <a href="#sobre-nosotros" class="block text-gray-800 hover:text-blue-600 transition">Nosotros</a>
+      <a href="#contacto" class="block text-gray-800 hover:text-blue-600 transition">Contacto</a>
     </div>
   </nav>
 
+  <script>
+    document.getElementById('mobile-menu-btn').addEventListener('click', function () {
+      var dropdown = document.getElementById('mobile-menu');
+      if (dropdown.classList.contains('hidden')) {
+        dropdown.classList.remove('hidden');
+        dropdown.classList.add('flex');
+      } else {
+        dropdown.classList.add('hidden');
+        dropdown.classList.remove('flex');
+      }
+    });
+
+    document.querySelectorAll('#mobile-menu a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        var dropdown = document.getElementById('mobile-menu');
+        dropdown.classList.add('hidden');
+        dropdown.classList.remove('flex');
+      });
+    });
+  </script>
+
+  <!-- ================================================== -->
+  <!-- HERO / HEADER -->
+  <!-- ================================================== -->
   <header class="relative bg-brand-blue py-20 lg:py-32 overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 relative z-10 text-center lg:text-left grid lg:grid-cols-2 gap-12 items-center">
       <div class="text-white">
@@ -164,20 +378,25 @@
       </div>
       <div class="hidden lg:block">
         <div class="bg-white/10 p-4 rounded-2xl backdrop-blur-sm border border-white/20">
-          <img src="assets/470193444_122143483970335014_8687886679501442374_n.jpg"
+          <img
+            src="https://liberom.github.io/soluciones-contables/assets/470193444_122143483970335014_8687886679501442374_n.jpg"
             alt="Soluciones Contables Profesional" class="rounded-xl shadow-2xl w-full h-auto object-cover">
         </div>
       </div>
     </div>
   </header>
 
+  <!-- ================================================== -->
+  <!-- BENEFICIOS / TRAYECTORIA -->
+  <!-- ================================================== -->
   <section class="bg-gray-100 py-8 border-b">
     <div class="max-w-7xl mx-auto px-4 flex flex-wrap justify-center gap-8 md:gap-16 opacity-70 grayscale">
       <div class="flex items-center space-x-2 font-bold text-gray-600"><span class="text-blue-600 text-2xl">✓</span>
         <span>35+ Años de Trayectoria</span>
       </div>
       <div class="flex items-center space-x-2 font-bold text-gray-600"><span class="text-blue-600 text-2xl">✓</span>
-        <span>Especialistas en la SET</span>
+        <span>Especialistas en la <a href="https://servicios.set.gov.py/">SET</a>
+        </span>
       </div>
       <div class="flex items-center space-x-2 font-bold text-gray-600"><span class="text-blue-600 text-2xl">✓</span>
         <span>Atención Personalizada</span>
@@ -191,6 +410,9 @@
     </div>
   </section>
 
+  <!-- ================================================== -->
+  <!-- SERVICIOS -->
+  <!-- ================================================== -->
   <section id="servicios" class="py-20 max-w-7xl mx-auto px-4">
     <div class="text-center mb-16">
       <h2 class="text-3xl font-bold text-gray-900 mb-4">Servicios Profesionales</h2>
@@ -213,7 +435,7 @@
         <h3 class="font-bold text-xl mb-3 text-sky-900">Laboral & Legal</h3>
         <ul class="text-gray-600 space-y-2 text-sm">
           <li>• Asesoramiento Laboral</li>
-          <li>• Gestión ante IPS</li>
+          <li>• Gestión ante <a href="https://portal.ips.gov.py/sistemas/ipsportal/">IPS</a></li>
           <li>• Trámites en Ministerio de Justicia y Trabajo</li>
           <li>• Gestión de Patente Municipal</li>
         </ul>
@@ -221,6 +443,9 @@
     </div>
   </section>
 
+  <!-- ================================================== -->
+  <!-- EDUCACION / CONSEJOS -->
+  <!-- ================================================== -->
   <section id="educacion" class="py-20 bg-sky-900 text-white">
     <div class="max-w-7xl mx-auto px-4">
       <div class="grid lg:grid-cols-2 gap-16 items-center">
@@ -232,8 +457,7 @@
             <div class="group bg-white/10 rounded-lg p-4 cursor-pointer">
               <h3 class="font-bold">1. Gastar más de lo que ganas</h3>
               <p class="pt-3 text-sm text-blue-200">Aprender a manejar bien tus gastos es el principio de unas
-                finanzas
-                saludables para evitar la crisis.</p>
+                finanzas saludables para evitar la crisis.</p>
             </div>
             <div class="group bg-white/10 rounded-lg p-4 cursor-pointer">
               <h3 class="font-bold">2. No llevar registro de gastos</h3>
@@ -264,7 +488,7 @@
               <p class="text-sm text-gray-500 text-sm">Intereses de préstamos bancarios y comisiones.</p>
             </div>
           </div>
-          <a href="https://wa.me/595983669036?text=Vengo%20desde%20el%20sitio%20web%20y%20necesito%20ayuda%20con%20mi%20contabilidad"
+          <a href="https://liberom.github.io/soluciones-contables/Guia_Breve_Sobre_Regulaciones_Fiscales.pdf"
             class="mt-8 block text-center bg-sky-900 text-white py-3 rounded-lg font-bold hover:bg-sky-800 transition">Recibir
             Guía Completa</a>
         </div>
@@ -272,17 +496,21 @@
     </div>
   </section>
 
-  <section class="bg-white p-8 rounded-2xl border-l-4 border-sky-900 shadow-md my-10">
+  <!-- ================================================== -->
+  <!-- ABOUT / SOBRE NOSOTROS -->
+  <!-- ================================================== -->
+  <section id="sobre-nosotros"
+    class="bg-white p-8 rounded-2xl border-l-4 border-sky-900 shadow-md my-10 max-w-5xl mx-auto lg:px-0 px-4">
     <div class="flex flex-col md:flex-row items-center gap-6">
-      <img src="assets/carmen_cantero.jpg" alt="Lic. Carmen Cantero, Especialista Contable"
-        class="w-32 h-32 rounded-full object-cover shadow-lg">
+      <img src="https://liberom.github.io/soluciones-contables/assets/carmen_cantero.jpg"
+        alt="Lic. Carmen Cantero, Especialista Contable" class="w-32 h-32 rounded-full object-cover shadow-lg">
       <div>
         <h2 class="text-2xl font-bold text-sky-900">Liderado por la Lic. Carmen Cantero</h2>
         <p class="text-blue-600 font-semibold mb-2">Contadora Pública Colegiada | Registro Profesional N° XXXX</p>
         <p class="text-gray-600 text-sm leading-relaxed">
           Con más de 35 años de trayectoria en el mercado paraguayo, la Lic. Cantero es especialista en
           <strong>Contabilidad & Tributación</strong>. Ha asesorado a más de 500 empresas en la transición
-          hacia el nuevo sistema tributario de la SET (IRE/IRP).
+          hacia el nuevo sistema tributario de la <a href="https://servicios.set.gov.py/">SET</a> (IRE/IRP).
         </p>
         <div class="mt-4 flex gap-4 text-xs font-bold uppercase tracking-widest text-gray-400">
           <span>✓ Miembro del Colegio de Contadores</span>
@@ -291,7 +519,10 @@
     </div>
   </section>
 
-  <footer id="contacto" class="py-20 bg-gray-50">
+  <!-- ================================================== -->
+  <!-- CONTACTO -->
+  <!-- ================================================== -->
+  <section id="contacto" class="py-20 bg-gray-50">
     <div class="max-w-4xl mx-auto px-4 text-center">
       <h2 class="text-3xl font-bold mb-4">¿Listo para poner tus cuentas en orden?</h2>
       <p class="text-gray-600 mb-10">Brindamos soluciones integrales para que tu única preocupación sea hacer crecer tu
@@ -307,15 +538,196 @@
         class="inline-flex items-center space-x-3 bg-green-600 text-white px-10 py-5 rounded-full text-xl font-bold hover:bg-green-700 transition transform hover:scale-105 shadow-xl">
         <span>Contactar por WhatsApp</span>
       </a>
+    </div>
+  </section>
 
-      <p class="mt-16 text-gray-400 text-sm italic">
+  <!-- ================================================== -->
+  <!-- KNOWLEDGE BASE / FAQ -->
+  <!-- ================================================== -->
+  <section id="faq" class="py-20 bg-sky-900 text-white">
+    <div class="max-w-4xl mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-bold mb-4">Base de Conocimiento Fiscal (FAQ DNIT)</h2>
+        <p class="text-blue-100 max-w-2xl mx-auto">Guías tributarias, respuestas regulatorias y asesoramiento técnico
+          sobre los normativos de la DNIT en Paraguay (Actualización 2026).</p>
+      </div>
+
+      <div class="space-y-6">
+        <!-- Item 1: Nuevas Reglamentaciones -->
+        <details
+          class="group bg-gray-50 rounded-xl border border-gray-200 p-6 [&_summary::-webkit-details-marker]:hidden cursor-pointer shadow-sm hover:shadow-md transition">
+          <summary class="flex justify-between items-center font-bold text-lg text-sky-900">
+            <h3>¿Cuáles son las nuevas reglamentaciones sobre facturación electrónica (SIFEN)?</h3>
+            <span class="transition group-open:rotate-180 text-sky-600 flex-shrink-0 ml-4">
+              <svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="24">
+                <path d="M6 9l6 6 6-6"></path>
+              </svg>
+            </span>
+          </summary>
+          <div class="mt-4 text-gray-600 text-sm leading-relaxed space-y-4 border-t border-gray-200 pt-4">
+            <p>Con la unificación de la SET y Aduanas en la DNIT, Paraguay acelera su digitalización para 2026 orientada
+              a la universalización de la Factura Electrónica (SIFEN).</p>
+            <p><strong>Fechas clave de obligatoriedad:</strong> Grupo 15 (Marzo 2026), Grupo 16 (Junio 2026), Grupo 17
+              (Septiembre 2026), Grupo 18 (Diciembre 2026). Los proveedores del Estado están obligados desde enero de
+              2026.</p>
+            <p><strong>Registro de Comprobantes (RG 90):</strong> Es obligatorio reportarlo mensualmente a través del
+              sistema Marangatu. Las ventas de facturadores electrónicos se registran automáticamente, pero las compras
+              manuales siguen requiriendo carga.</p>
+            <p><strong>Comercio Exterior:</strong> A partir del 1 de enero de 2026 rige la Declaración Aduanera Digital
+              (DAD) eliminando operaciones en papel y unificando el control tributario interno y fronterizo.</p>
+            <div class="bg-blue-50 p-4 rounded-lg mt-2 text-sky-800 border-l-4 border-blue-400">
+              <strong>Consejo Pro:</strong> Mantén tu RUC "Activo" y tus datos de contacto al día en Marangatu. La DNIT
+              enviará notificaciones de paso forzoso a electrónica de forma exclusiva al Buzón Electrónico Tributario.
+            </div>
+          </div>
+        </details>
+
+        <!-- Item 2: IRP y Gastos -->
+        <details
+          class="group bg-gray-50 rounded-xl border border-gray-200 p-6 [&_summary::-webkit-details-marker]:hidden cursor-pointer shadow-sm hover:shadow-md transition">
+          <summary class="flex justify-between items-center font-bold text-lg text-sky-900">
+            <h3>¿Qué gastos son deducibles en el IRP-RSP y cómo es su declaración?</h3>
+            <span class="transition group-open:rotate-180 text-sky-600 flex-shrink-0 ml-4">
+              <svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="24">
+                <path d="M6 9l6 6 6-6"></path>
+              </svg>
+            </span>
+          </summary>
+          <div class="mt-4 text-gray-600 text-sm leading-relaxed space-y-4 border-t border-gray-200 pt-4">
+            <p>El IRP para Servicios Personales (IRP-RSP) afecta a quienes ganan más de 80.000.000 Gs. anuales.</p>
+            <p><strong>Gastos Personales y Familiares Deducibles:</strong> Alimentación, salud, seguros privados,
+              educación, alojamiento, servicios básicos, vacaciones y esparcimiento en Paraguay con comprobantes
+              legales.</p>
+            <p><strong>Gastos Profesionales:</strong> Capacitaciones, equipos, papelería y movilidad (vehículo para el
+              desarrollo de actividades cada 3 años).</p>
+            <p><strong>Dependientes:</strong> Para deducir gastos familiares, los integrantes deberán ser vinculados en
+              la ficha de RUC en Marangatu incluyendo documentación probatoria y sin estatus de contribuyente
+              independiente del IRP.</p>
+            <p>A partir de las normas más recientes de este 2026, la declaración anual (Formulario 515, vencimiento
+              marzo) ya cuenta con una consolidación pre-calculada generada automátivamente por el núcleo de la RG 90.
+            </p>
+            <div class="bg-blue-50 p-4 rounded-lg mt-2 text-sky-800 border-l-4 border-blue-400">
+              <strong>Nota de Seguridad:</strong> Evite compartir su acceso de DNIT irresponsablemente; conceda en todo
+              momento el privilegio de "Tercero Autorizado" a su firma contable.
+            </div>
+          </div>
+        </details>
+
+        <!-- Item 3: IDU -->
+        <details
+          class="group bg-gray-50 rounded-xl border border-gray-200 p-6 [&_summary::-webkit-details-marker]:hidden cursor-pointer shadow-sm hover:shadow-md transition">
+          <summary class="flex justify-between items-center font-bold text-lg text-sky-900">
+            <h3>¿Cuándo se genera la obligación de pago del IDU en Paraguay?</h3>
+            <span class="transition group-open:rotate-180 text-sky-600 flex-shrink-0 ml-4">
+              <svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="24">
+                <path d="M6 9l6 6 6-6"></path>
+              </svg>
+            </span>
+          </summary>
+          <div class="mt-4 text-gray-600 text-sm leading-relaxed space-y-4 border-t border-gray-200 pt-4">
+            <p>El IDU grava las utilidades extraidas por directores dueños de unipersonales (IRE General), SRL y
+              corporaciones (SA) en el país, fijado a tasa legal en 8% y ampliable a 15% sobre pagos al extranjero.</p>
+            <p><strong>¿Cómo funciona hoy?</strong> Opera mediante el método <em>retención en la fuente</em>. Retenido
+              directamente por la empresa al efectivizar u otorgar libre disponibilidad en asamblea al accionista final.
+            </p>
+            <p><strong>Puesta a disposición:</strong> El gravámen cobra vida en simultáneo que el acta aprueba los
+              estados. Si no existe un destino final declarado cumpliendo los primeros 12 meses, tributación puede
+              inferir la distribución tácita acarreando la obligación formal automática e intereses.</p>
+            <p>La alternativa exenta al IDU corresponde al proceso societario denominado formalmente como
+              <strong>Capitalización de Utilidades</strong> (donde se inyecta la liquidez estructuralmente de vuelta al
+              negocio).
+            </p>
+            <div class="bg-blue-50 p-4 rounded-lg mt-2 text-sky-800 border-l-4 border-blue-400">
+              <strong>Consejo de Cumplimiento DNIT:</strong> ¡Cuidado con las fugas de distribución camuflada!
+              Operatividades tales como los préstamos prolongados directos y flexibles desde empresa al accionista
+              originarán reclamos de evasión punitivos si las entidades intercedan a una verificación general de
+              finanzas.
+            </div>
+          </div>
+        </details>
+
+        <!-- Item 4: Biométrico y Cese -->
+        <details
+          class="group bg-gray-50 rounded-xl border border-gray-200 p-6 [&_summary::-webkit-details-marker]:hidden cursor-pointer shadow-sm hover:shadow-md transition">
+          <summary class="flex justify-between items-center font-bold text-lg text-sky-900">
+            <h3>¿Qué pasa si no realizo la actualización biométrica de mi RUC?</h3>
+            <span class="transition group-open:rotate-180 text-sky-600 flex-shrink-0 ml-4">
+              <svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="24">
+                <path d="M6 9l6 6 6-6"></path>
+              </svg>
+            </span>
+          </summary>
+          <div class="mt-4 text-gray-600 text-sm leading-relaxed space-y-4 border-t border-gray-200 pt-4">
+            <p>Actualizar regularmente el RUC es el deber más esencial en curso: DNIT cruza permanentemente la vericidad
+              de domicilios impositivos imponiendo cierres del certificado.</p>
+            <p><strong>Validación Biométrica Vigente:</strong> Desplegada desde los ecosistemas de gobierno digital (ej:
+              <em>Paraguay Py</em>) es un cerco contundente al formato de operación fantasma, exigiendo validación
+              facial continua previniendo así un bloqueo total en el portal Marangatu a las liquidaciones.
+            </p>
+            <p><strong>¿Deseas cerrar momentáneamente?</strong> La paralización legal exige pedir oficialmente la
+              exclusión definitiva o de manera temporal si aplicaran justificaciones concretando la "Suspensión"
+              (cubriendo por 24 meses sin multas contínuas). No obstante esto, impone obligadamente presentar balance
+              inicial de baja (IRE G.) o erradicar remanente documental inactivo autorizado previamente.</p>
+            <div class="bg-blue-50 p-4 rounded-lg mt-2 text-sky-800 border-l-4 border-blue-400">
+              <strong>Atención:</strong> Las inobservancias formales básicas por desatención a estos dictámenes en
+              fechas específicas acumulan actualmente pasivos por valor de 500.000 Gs mensuales a lo devengado.
+            </div>
+          </div>
+        </details>
+
+        <!-- Item 5: Cripto y Blockchain -->
+        <details
+          class="group bg-gray-50 rounded-xl border border-gray-200 p-6 [&_summary::-webkit-details-marker]:hidden cursor-pointer shadow-sm hover:shadow-md transition">
+          <summary class="flex justify-between items-center font-bold text-lg text-sky-900">
+            <h3>¿Debo pagar impuestos por la venta de las Criptomonedas según la RG 47/2026?</h3>
+            <span class="transition group-open:rotate-180 text-sky-600 flex-shrink-0 ml-4">
+              <svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="24">
+                <path d="M6 9l6 6 6-6"></path>
+              </svg>
+            </span>
+          </summary>
+          <div class="mt-4 text-gray-600 text-sm leading-relaxed space-y-4 border-t border-gray-200 pt-4">
+            <p>Con fecha resolutiva 1 de marzo 2026, normativas estrictas obligan a Casas de Intercambio locativas,
+              mineros e inversores de alto volumen, reportar integralmente detalles críticos sobre trading digital en
+              criptomonedas o exchanges.</p>
+            <ul class="list-disc pl-5 mb-2">
+              <li>El "Holding" o simple guardado en billeteras calientes/frias se enmarca exento transitoriamente del
+                impuesto, hasta re-convertir en capital liquida tradicional o ser permutadas.</li>
+              <li>Exigencia de reporte sobre la liquidación del 100% de transacciones: Explotará en el tributo de Renta
+                <strong>(IRP-RC con 8%)</strong> al detectar utilidades monetarias del delta contable.
+              </li>
+              <li>Sustrato Minero: Tratado fiscal y legalmente como industria o lucro institucional
+                <strong>(IRE)</strong> debiendo respaldar maquinaria.
+              </li>
+            </ul>
+            <div class="bg-blue-50 p-4 rounded-lg mt-2 text-sky-800 border-l-4 border-blue-400">
+              <strong>Aviso Prevención Penal:</strong> La canalización de liquidaciones sustanciales devuelta hacia los
+              recintos de bancos formales exalta estrictamente alertas bancarias directas para el blindaje y mitigación
+              anti-lavado <em>(SEPRELAD)</em> que pueden acarrear intervenciones in-situ y congelamiento masificado de
+              finanzas.
+            </div>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================== -->
+  <!-- FOOTER -->
+  <!-- ================================================== -->
+  <footer class="bg-white py-10 border-t border-gray-200">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <p class="text-gray-500 text-sm italic">
         &copy; 2024 Soluciones Contables C&D - Ciudad del Este, Paraguay.<br>
         <a href="https://liberom.github.io/vynix-sys" target="_blank" rel="noopener noreferrer"
-          class="hover:text-blue-600 transition">Hecho por Vynix</a>
+          class="hover:text-blue-600 transition font-medium">Hecho por Vynix</a>
       </p>
     </div>
   </footer>
 
+  <!-- ================================================== -->
+  <!-- WHATSAPP FLOATING BUTTON -->
+  <!-- ================================================== -->
   <div class="md:hidden fixed bottom-6 right-6 z-50">
     <a href="https://wa.me/595983669036?text=Vengo%20desde%20el%20sitio%20web%20y%20estoy%20interesado%20en%20sus%20servicios"
       target="_blank" rel="noopener noreferrer"
