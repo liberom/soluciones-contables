@@ -46,7 +46,7 @@
         "@type": "AccountingService",
         "name": "Soluciones Contables C&D",
         "image": "https://liberom.github.io/soluciones-contables/assets/Image_wpagzswpagzswpag_2.jpg",
-        "@id": "https://liberom.github.io/soluciones-contables/#organization",
+        "@id": "https://liberom.github.io/soluciones-contables/",
         "url": "https://liberom.github.io/soluciones-contables/",
         "openingHours": "Lun-Vie 08:00-18:00",
         "telephone": "+595983669036",
@@ -80,7 +80,7 @@
         },
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "Calle Lima",
+          "streetAddress": "Calle Lima, Km 7",
           "addressLocality": "Ciudad del Este",
           "addressRegion": "Alto Paraná",
           "postalCode": "7000",
@@ -289,6 +289,26 @@
 </head>
 
 <body class="bg-gray-50 text-gray-800 antialiased">
+  <script>
+    document.getElementById('mobile-menu-btn').addEventListener('click', function () {
+      var dropdown = document.getElementById('mobile-menu');
+      if (dropdown.classList.contains('hidden')) {
+        dropdown.classList.remove('hidden');
+        dropdown.classList.add('flex');
+      } else {
+        dropdown.classList.add('hidden');
+        dropdown.classList.remove('flex');
+      }
+    });
+
+    document.querySelectorAll('#mobile-menu a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        var dropdown = document.getElementById('mobile-menu');
+        dropdown.classList.add('hidden');
+        dropdown.classList.remove('flex');
+      });
+    });
+  </script>
 
   <!-- ================================================== -->
   <!-- BREADCRUMB (HIDDEN FOR SEO) -->
@@ -300,7 +320,7 @@
       <li><a href="#educacion">Consejos</a></li>
       <li><a href="#sobre-nosotros">Nosotros</a></li>
       <li><a href="#contacto">Contacto</a></li>
-      <li><a href="#faq">Perguntas Frequentes</a></li>
+      <li><a href="#faq">Preguntas Frecuentes</a></li>
     </ol>
   </nav>
 
@@ -311,7 +331,7 @@
     <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
       <div class="flex items-center space-x-3">
         <img src="https://liberom.github.io/soluciones-contables/assets/Image_wpagzswpagzswpag_2.jpg"
-          alt="Logo Soluciones Contables" class="h-10 md:h-12 w-auto rounded-md object-contain">
+          alt="Logo Soluciones Contables" class="h-10 md:h-12 w-auto rounded-md object-contain" loading="lazy">
         <div class="font-bold text-base md:text-xl text-sky-900 uppercase tracking-tighter block">
           Soluciones <span class="text-blue-600">Contables</span><span class="hidden sm:inline"> C&D</span>
         </div>
@@ -345,26 +365,7 @@
     </div>
   </nav>
 
-  <script>
-    document.getElementById('mobile-menu-btn').addEventListener('click', function () {
-      var dropdown = document.getElementById('mobile-menu');
-      if (dropdown.classList.contains('hidden')) {
-        dropdown.classList.remove('hidden');
-        dropdown.classList.add('flex');
-      } else {
-        dropdown.classList.add('hidden');
-        dropdown.classList.remove('flex');
-      }
-    });
 
-    document.querySelectorAll('#mobile-menu a').forEach(function (link) {
-      link.addEventListener('click', function () {
-        var dropdown = document.getElementById('mobile-menu');
-        dropdown.classList.add('hidden');
-        dropdown.classList.remove('flex');
-      });
-    });
-  </script>
 
   <!-- ================================================== -->
   <!-- HERO / HEADER -->
@@ -394,7 +395,8 @@
         <div class="bg-white/10 p-4 rounded-2xl backdrop-blur-sm border border-white/20">
           <img
             src="https://liberom.github.io/soluciones-contables/assets/470193444_122143483970335014_8687886679501442374_n.jpg"
-            alt="Soluciones Contables Profesional" class="rounded-xl shadow-2xl w-full h-auto object-cover">
+            alt="Soluciones Contables Profesional" class="rounded-xl shadow-2xl w-full h-auto object-cover"
+            loading="lazy">
         </div>
       </div>
     </div>
@@ -517,7 +519,8 @@
     class="bg-white p-8 rounded-2xl border-l-4 border-sky-900 shadow-md my-10 max-w-5xl mx-auto lg:px-0 px-4">
     <div class="flex flex-col md:flex-row items-center gap-6">
       <img src="https://liberom.github.io/soluciones-contables/assets/carmen_cantero.jpg"
-        alt="Lic. Carmen Cantero, Especialista Contable" class="w-32 h-32 rounded-full object-cover shadow-lg">
+        alt="Lic. Carmen Cantero, Especialista Contable" class="w-32 h-32 rounded-full object-cover shadow-lg"
+        loading="lazy">
       <div>
         <h2 class="text-2xl font-bold text-sky-900">Liderado por la Lic. Carmen Cantero</h2>
         <p class="text-blue-600 font-semibold mb-2">Contadora Pública Colegiada | Registro Profesional N° XXXX</p>
