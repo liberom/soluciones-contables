@@ -291,26 +291,6 @@
 </head>
 
 <body class="bg-gray-50 text-gray-800 antialiased">
-  <script>
-    document.getElementById('mobile-menu-btn').addEventListener('click', function () {
-      var dropdown = document.getElementById('mobile-menu');
-      if (dropdown.classList.contains('hidden')) {
-        dropdown.classList.remove('hidden');
-        dropdown.classList.add('flex');
-      } else {
-        dropdown.classList.add('hidden');
-        dropdown.classList.remove('flex');
-      }
-    });
-
-    document.querySelectorAll('#mobile-menu a').forEach(function (link) {
-      link.addEventListener('click', function () {
-        var dropdown = document.getElementById('mobile-menu');
-        dropdown.classList.add('hidden');
-        dropdown.classList.remove('flex');
-      });
-    });
-  </script>
 
   <!-- ================================================== -->
   <!-- BREADCRUMB (HIDDEN FOR SEO) -->
@@ -398,7 +378,7 @@
           <img
             src="https://liberom.github.io/soluciones-contables/assets/470193444_122143483970335014_8687886679501442374_n.jpg"
             alt="Soluciones Contables Profesional" class="rounded-xl shadow-2xl w-full h-auto object-cover"
-            loading="lazy">
+            loading="eager">
         </div>
       </div>
     </div>
@@ -408,7 +388,7 @@
   <!-- BENEFICIOS / TRAYECTORIA -->
   <!-- ================================================== -->
   <section class="bg-gray-100 py-8 border-b">
-    <div class="max-w-7xl mx-auto px-4 flex flex-wrap justify-center gap-8 md:gap-16 opacity-70 grayscale">
+    <div class="max-w-7xl mx-auto px-4 flex flex-wrap justify-center gap-8 md:gap-16">
       <div class="flex items-center space-x-2 font-bold text-gray-600"><span class="text-blue-600 text-2xl">✓</span>
         <span>35+ Años de Trayectoria</span>
       </div>
@@ -759,6 +739,21 @@
       </svg>
     </a>
   </div>
+
+  <script>
+    document.getElementById('mobile-menu-btn').addEventListener('click', function () {
+      var dropdown = document.getElementById('mobile-menu');
+      dropdown.classList.toggle('hidden');
+      dropdown.classList.toggle('flex');
+    });
+    document.querySelectorAll('#mobile-menu a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        var dropdown = document.getElementById('mobile-menu');
+        dropdown.classList.add('hidden');
+        dropdown.classList.remove('flex');
+      });
+    });
+  </script>
 
 </body>
 
